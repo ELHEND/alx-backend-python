@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A module for testing the utils module.
+""" module for testing the utils module.
 """
 import unittest
 from typing import Dict, Tuple, Union
@@ -14,7 +14,7 @@ from utils import (
 
 
 class TestAccessNestedMap(unittest.TestCase):
-    """Tests the `access_nested_map` function."""
+    """Tests `access_nested_map` function."""
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
@@ -45,7 +45,7 @@ class TestAccessNestedMap(unittest.TestCase):
 
 
 class TestGetJson(unittest.TestCase):
-    """Tests the `get_json` function."""
+    """Tests  `get_json` function."""
     @parameterized.expand([
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False}),
