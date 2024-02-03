@@ -3,6 +3,7 @@
 """
 import requests
 from functools import wraps
+
 from typing import (
     Mapping,
     Sequence,
